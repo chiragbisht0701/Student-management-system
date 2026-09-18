@@ -18,7 +18,6 @@ The system supports local persistence of student records. Data is saved to a loc
 Technologies
 
 The project is developed using Java 17 as the primary programming language. Java is used to implement the application logic, object-oriented structure, data management, validation, file handling, and console interaction.
-Maven is used as the build and project management tool. The Maven configuration defines the Java version and the testing dependency and provides standard commands for building and testing the project.
 JUnit 5 is used for unit testing. It provides automated tests for important validation behavior and helps verify that valid student data is accepted while invalid data is rejected.
 Java collections are used for managing student records in memory. A map-based structure allows student records to be organized using their unique student IDs.
 Java object serialization is used for local data persistence. Student records are stored in a local file and loaded when the application starts.
@@ -26,7 +25,7 @@ Git and GitHub are used for version control and project submission. The reposito
 
 Installation & Running
 
-To run the Student Management System, Java Development Kit (JDK) 17 or later should be installed on the computer. Maven should also be installed because the project uses Maven for building and testing.
+To run the Student Management System, Java Development Kit (JDK) 17 or later should be installed on the computer.
 After downloading or cloning the project, open a terminal in the project directory. The project can be cloned from GitHub using the repository URL once the repository has been created.
 The application will display a menu in the console. The user can select an operation such as adding, updating, deleting, viewing, or searching for students, or generating an academic report.
 Student data is automatically stored locally when records are added, updated, or deleted. The application loads the stored records when it is started again.
@@ -34,5 +33,4 @@ Student data is automatically stored locally when records are added, updated, or
 Testing Instructions
 
 The project uses JUnit 5 for automated testing. The tests are located under the project's test source directory and currently verify important student-data validation behavior.
-Maven will compile the project, execute the JUnit tests, and display the test results in the terminal. The tests verify that valid student information is accepted and that invalid information, such as marks outside the permitted range, is rejected.
 The application can also be manually tested through its console interface by performing each available operation. Test cases can include adding valid students, attempting to add duplicate IDs, updating existing students, attempting to update non-existent students, searching by ID or name, deleting records, entering invalid values, and generating the academic report.
